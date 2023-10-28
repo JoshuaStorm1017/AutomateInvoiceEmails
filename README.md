@@ -15,7 +15,7 @@ This project was developed to optimize the invoicing system within my current em
 
 1. Clone the repository from [GitHub](https://github.com/JoshuaStorm1017/AutomatedEmailScript/tree/master).
 2. Place your `Customer_Emails_For_Invoices.xlsx` file and PDF invoices in the 'Invoices_TO_BE_Emailed' folder.
-3. Update placeholders in the script (`AutomateEmails.py`) with your specific company information.
+3. Update placeholders in the script (`main.py`) with your specific company information.
 4. Run the following command to execute the script:
    python main.py
 
