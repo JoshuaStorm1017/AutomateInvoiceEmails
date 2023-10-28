@@ -1,22 +1,32 @@
-# AutomateInvoiceEmails
-Automated Email System for Invoices (grabbing information from PDF file name)
+# Automated Invoice Email System
 
-AutomatedEmailScript This repository contains a Python script (AutomateEmails.py) for automating the process of sending emails.
+## Overview
+This project was developed to optimize the invoicing system within my current employment by automating the process of emailing invoices. The manual task of sending out numerous invoices was time-consuming and inefficient. This automation initiative has streamlined the invoicing process, making it more efficient and freeing up time for other tasks.
 
-The python code is in the master branch of this repository.
+## Features
 
-Description The script take emails from a list of customers from an Excel file (Customer_Emails_For_Invoices.xlsx), finds the corresponding PDF invoices in the 'Invoices_TO_BE_Emailed' folder, sends an email to each customer with the corresponding invoice attached, and finally, moves the sent invoices from the 'Invoices_TO_BE_Emailed' folder to the 'Invoices_THAT_WERE_EMailed' folder.
+- Reads customer emails from an Excel file (`Customer_Emails_For_Invoices.xlsx`).
+- Finds corresponding PDF invoices in the 'Invoices_TO_BE_Emailed' folder.
+- Sends an email to each customer with the corresponding invoice attached.
+- Moves sent invoices to the 'Invoices_THAT_WERE_Emailed' folder for record-keeping.
+- Retrieves Invoice number and Customer number from the PDF file names.
 
-This was created to save me some time at work when we have a lot of invoices to be emailed as software does not do this for us. IMPORTANT This script retrieves the Invoice number and Customer number from the PDF file name. If your PDF files do not contain these, this scipt will not work.
+## How to Use
 
-Usage: You need to update the placeholders in the script with your information. Variables such as your_company_name, your_department, your_phone_number, your_email etc. should be replaced with your actual company name, department, phone number, company email. Also, you need to update parent_folder with the path where your invoice files and customer excel file are located.
+1. Clone the repository from [GitHub](https://github.com/JoshuaStorm1017/AutomatedEmailScript/tree/master).
+2. Place your `Customer_Emails_For_Invoices.xlsx` file and PDF invoices in the 'Invoices_TO_BE_Emailed' folder.
+3. Update placeholders in the script (`AutomateEmails.py`) with your specific company information.
+4. Run the following command to execute the script:
+   python main.py
 
-Place your Customer_Emails_For_Invoices.xlsx file and the PDF invoices you want to email in the 'Invoices_TO_BE_Emailed' folder.
 
-To run the Python script, follow the command:
+## Prerequisites
 
-python AutomatedEmails.py
+- Python environment with the following packages installed:
+- pandas
+- pywin32
 
-Your Python environment needs to have all the necessary packages installed. Packages Needed: pandas pywin32
+## Technologies
 
-Feel Free to do whatever you please with this script.
+- Python
+
